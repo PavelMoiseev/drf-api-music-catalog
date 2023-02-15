@@ -7,7 +7,11 @@ from catalog_app.serializers import ArtistSerializer, AlbumSerializer, SongSeria
 
 class ApiOverview(GenericAPIView):
     def get(self, arg):
-        data = {'Music catalog': 'catalog/'}
+        data = {
+            'Music catalog': 'catalog/',
+            'Swagger documentation': 'swagger/',
+            'Alternative Documentation': 'redoc/',
+        }
         return Response(data)
 
 

@@ -1,8 +1,5 @@
-from django.urls import include, path
-from rest_framework import routers
+from django.urls import path
 from catalog_app import views
-
-app_name = 'catalog_app'
 
 urlpatterns = [
     path('', views.CatalogApiOverview.as_view()),

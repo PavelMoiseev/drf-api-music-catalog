@@ -51,6 +51,10 @@ python manage.py migrate
 ```bash
 python manage.py createsuperuser
 ```
+#### Для запуска тестов воспользуйтесь следующей командой:
+```bash
+pytest catalog_app/tests.py
+```
 ___
 
 #### Приступайте к использованию!

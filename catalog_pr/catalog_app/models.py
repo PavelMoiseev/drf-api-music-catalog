@@ -11,7 +11,7 @@ class Artist(models.Model):
 class Album(models.Model):
     artist = models.ForeignKey(Artist, on_delete=models.CASCADE)
     title = models.CharField(max_length=200)
-    release_year = models.DateField()
+    release_year = models.PositiveIntegerField()
 
     def __str__(self):
         return self.title

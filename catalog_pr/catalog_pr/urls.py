@@ -16,8 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.conf.urls import include
 from django.urls import path
+from catalog_app.views import ApiOverview
+from rest_framework.routers import DefaultRouter
+
 
 urlpatterns = [
+    path('', ApiOverview.as_view()),
     path('admin/', admin.site.urls),
     path('catalog/', include("catalog_app.urls"))
 ]
